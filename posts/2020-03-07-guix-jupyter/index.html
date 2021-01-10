@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>SciCloj Clojure Data Science community: Meeting Video: Guix-Jupyter with Ludovic Courtès</title>
+    <link rel="canonical" href="https://scicloj.github.io/blog-test/posts/2020-03-07-guix-jupyter/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+    <link href="/blog-test/css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/blog-test/">
+              <img src="https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png" alt="SciCloj logo" />
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li ><a href="/blog-test/">Home</a></li> -->
+                <li
+                ><a href="/blog-test/archives/">Archives</a></li>
+                
+                <li
+                >
+                <a href="/blog-test/pages/about/">About</a>
+                </li>
+                
+                <li
+                >
+                <a href="/blog-test/pages/events/">Events</a>
+                </li>
+                
+                <li
+                >
+                <a href="/blog-test/pages/libraries/">Libraries</a>
+                </li>
+                
+                <li
+                >
+                <a href="/blog-test/pages/reading/">Reading</a>
+                </li>
+                
+                <li><a href="/blog-test/feed.xml">RSS</a></li>
+                <li><a href="https://github.com/scicloj/blog-content/issues">Feedback</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-lg-9">
+            <div id="content">
+                
+<div id="post">
+    <div class="post-header">
+    <div id="post-meta" class="row">
+        <div class="col-lg-6">7 March 2020</div>
+        
+        <span class="col-lg-6 right">By: Daniel Slutsky</span>
+        
+    </div>
+    <h2>Meeting Video: Guix-Jupyter with Ludovic Courtès</h2>
+
+    <!-- conditional topic logo displayed if :topic has value in a post -->
+    
+</div>
+<div>
+    
+    <p>A lot has been happening at Scicloj in the last few weeks, but now we finally managed to edit and publish the video from a meeting we've had at January 9th.</p><p>It was a special meeting, as we the topic was something out of the ususal Clojure scope: Guix-Jupyter reproducible notebooks.</p><p>Kindly, Ludovic Courtès of the Guix community agreed to give a talk at this scicloj web meeting, and have a discussion with us.</p><p>Here are <a href="https://youtu.be/GFyv3qUXHpU">the video</a> and <a href="https://github.com/scicloj/scicloj/blob/master/resources/slides/scicloj-guix-jupyter.pdf">the slides</a>.</p><p>Now, let us discuss what it is about.</p><h2 id="guix">Guix</h2><p><a href="https://guix.gnu.org/">GNU Guix</a> is a unique toolbox for Linux package management, as well as a Linux distribution. It is built on principles of Functional Programming, inspired by <a href="https://nixos.org/nix/">Nix</a>, and is written and configurable in GNU Guile, a dialect of Scheme. Functional package management has beautiful implications in enabling systems which are secure, transparent and reproducible.</p><p>Recently, the Guix community started the <a href="https://gitlab.inria.fr/guix-hpc">Guix-HPC</a> project, that brings these principles to the field of scientific computing. Specifically, the <a href="https://gitlab.inria.fr/guix-hpc/guix-kernel">Guix Jupyter kernel</a> allows Jupyter users to specify their precise software dependencies as Guix dependencies.</p><p>Ludovic, who is a research engineer at <a href="https://www.inria.fr/fr/centre-inria-bordeaux-sud-ouest">Inria Bordeaux Sud-Ouest</a>, has been active both in academic research and in libre software. Some of his involvement has been in the Guile, Guix and Guix-HPC projects.</p><p>At the scicloj, we are minded about various aspects of reproducible deployment and reproducible research. Of course, we also love Functional Programming and curious about Scheme. So, a whole meeting about Guix-Jupyter would naturally be inspiring and joyful for us.</p><h2 id="the-meeting">The meeting</h2><p>In the meeting we have had several participants from the Guix community and from the Scicloj community.</p><p>It was the first time for us to use an open-source video-conferencing tool, <a href="https://jitsi.org/">Jitsi</a>. This was a little step outside of our comfort zone, and so some small parts of the discussion are missing in the recorded video.</p><p>We began with a talk, where Ludovic gave a general introduction to Guix and reprocibility, as well as a demonstration of Guix-Jupyter.</p><p>Then, we moved to an open discussion. A nice conversation emerged, with three of the participants: Martin Kavalar, the CEO of <a href="http://nextjournal.com/">Nextjournal</a>, a web notebook built on principles of immutability and reproducibility; Klaus Harbo, who is, among other things, the maintainer of <a href="https://github.com/clojupyter/clojupyter">Clojupyter</a>, a Clojure Jupyter kernel; and Daniel Szmulewicz, who has been studying various dialects of Scheme, and builds Clojure development tools on top of the Maven ecosystem.</p><p>We discussed some technical aspects and usability aspects of Guix, as well as some conceptual questions. Interesting dilemmas arise when the Guix approach towards libre software, pure functions, reproducibility, security and transparency is used alongside other pieces of software. We also discussed some issues of possibly bringing Clojure ecosystem more fully into the Guix ecosystem.</p><h2 id="thanks">Thanks!</h2><p>Many thanks to Ludovic and the other Guix community members who kindly joined us at Scicloj for this meeting!</p><p>See you on the next meetings.</p>
+</div>
+
+<div id="post-tags">
+    <b>Tags: </b>
+    
+    <a href="/blog-test/tags/reproducibility/">reproducibility</a>
+    
+    <a href="/blog-test/tags/notebooks/">notebooks</a>
+    
+</div>
+
+
+    <div id="prev-next">
+        
+        <a href="/blog-test/posts/2020-03-17-covid-19-hackathon-planning/">&laquo; Planning a COVID-19 online hackathon</a>
+        
+        
+        <a class="right" href="/blog-test/posts/2020-03-05-rgsoc2020/">Data Science in Clojure at Rails Girls Summer of Code &raquo;</a>
+        
+    </div>
+
+    
+
+
+</div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="sidebar">
+                <h3>Links</h3>
+                <ul id="links">
+                    <li><a href="http://scicloj.github.io/">SciCloj Community</a></li>
+                    <li><a href="http://youtube.com/c/scicloj">YouTube channel</a></li>
+                    <li><a href="https://github.com/scicloj/blog-content/issues">Feeback / Issues</a></li>
+                    
+                    <li><a href="/blog-test/pages/contributing/">Contributing</a></li>
+                    
+                    <li><a href="/blog-test/pages/discussions/">Discussions</a></li>
+                    
+                </ul>
+                
+                <div id="recent">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        
+                        <li><a href="/blog-test/posts/2020-11-11-nov-2020-fundamentals-study-meetings/">November 2020 fundamentals study meetings</a></li>
+                        
+                        <li><a href="/blog-test/posts/2020-10-29-nov-2020-ml-study-meetings/">November 2020 machine learning study meetings</a></li>
+                        
+                        <li><a href="/blog-test/posts/2020-08-26-public-meeting-2020-08-30/">Preparing to our public meeting on August 30th</a></li>
+                        
+                    </ul>
+                </div>
+                
+                
+                <div id="tags">
+                    <h3>Tags</h3>
+                    <ul>
+                        
+                        <li><a href="/blog-test/tags/diversity/">diversity</a></li>
+                        
+                        <li><a href="/blog-test/tags/reproducibility/">reproducibility</a></li>
+                        
+                        <li><a href="/blog-test/tags/cryogen/">cryogen</a></li>
+                        
+                        <li><a href="/blog-test/tags/data%20science/">data science</a></li>
+                        
+                        <li><a href="/blog-test/tags/covid-19/">covid-19</a></li>
+                        
+                        <li><a href="/blog-test/tags/community/">community</a></li>
+                        
+                        <li><a href="/blog-test/tags/hackathon/">hackathon</a></li>
+                        
+                        <li><a href="/blog-test/tags/meeting/">meeting</a></li>
+                        
+                        <li><a href="/blog-test/tags/notebooks/">notebooks</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+      Copyright &copy; 2021 SciCloj
+      <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
+
+      <license id="license">
+        <div>
+          <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 ShareAlike License</a>, including custom images & stylesheets.</p>
+          <p>Permissions beyond the scope of this license may be available by contacting <a xmlns:cc="http://creativecommons.org/ns#" href="https://twitter.com/scicloj" rel="cc:morePermissions">@scicloj</a></p>
+          <br>
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+        </div>
+      </license>
+
+    </footer>
+</div>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="/blog-test/js/highlight.pack.js" type="application/javascript"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>

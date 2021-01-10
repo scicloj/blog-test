@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>SciCloj Clojure Data Science community: Data Science in Clojure at Rails Girls Summer of Code</title>
+    <link rel="canonical" href="https://scicloj.github.io/blog-test/posts/2020-03-05-rgsoc2020/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+    <link href="/blog-test/css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/blog-test/">
+              <img src="https://raw.githubusercontent.com/scicloj/graphic-design/live/scicloj-community-logo-banner.png" alt="SciCloj logo" />
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li ><a href="/blog-test/">Home</a></li> -->
+                <li
+                ><a href="/blog-test/archives/">Archives</a></li>
+                
+                <li
+                >
+                <a href="/blog-test/pages/about/">About</a>
+                </li>
+                
+                <li
+                >
+                <a href="/blog-test/pages/events/">Events</a>
+                </li>
+                
+                <li
+                >
+                <a href="/blog-test/pages/libraries/">Libraries</a>
+                </li>
+                
+                <li
+                >
+                <a href="/blog-test/pages/reading/">Reading</a>
+                </li>
+                
+                <li><a href="/blog-test/feed.xml">RSS</a></li>
+                <li><a href="https://github.com/scicloj/blog-content/issues">Feedback</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-lg-9">
+            <div id="content">
+                
+<div id="post">
+    <div class="post-header">
+    <div id="post-meta" class="row">
+        <div class="col-lg-6">5 March 2020</div>
+        
+        <span class="col-lg-6 right">By: Daniel Slutsky</span>
+        
+    </div>
+    <h2>Data Science in Clojure at Rails Girls Summer of Code</h2>
+
+    <!-- conditional topic logo displayed if :topic has value in a post -->
+    
+</div>
+<div>
+    
+    <p>In this post I wish to write briefly about the <a href="https://teams.railsgirlssummerofcode.org/projects/369-data-science-in-clojure">"data science in clojure"</a> project in Rails Girls Summer of Code 2020.</p><p>Hoping to encourage people to join as <a href="https://railsgirlssummerofcode.org/students/application/">students</a> or <a href="https://railsgirlssummerofcode.org/guide/coaching/">coaches</a>, I will try to argue why (in my opinion) it is important to the healthy growth of the clojure data science ecosystem: not only by actively addressing our goal to create a welcoming community, but also by creating a continuous process of experimentation and reflection about the usability of the emerging stack.</p><hr /><p>For several years, <a href="https://railsgirlssummerofcode.org/">Rails Girls Summer of Code</a> has been organizing Summer of Code projects, where students of underrepresented groups (specifically women and non-binary people) work on open source projects for a monthly stipend during the summer. The explicit main goal is to bring more diversity into Open Source.</p><p>Two Clojure projects were accepted to RGSoC for 2020:</p><ul><li><a href="https://teams.railsgirlssummerofcode.org/projects/318-kaocha">Kaocha</a>, submitted by <a href="https://github.com/plexus">Arne Brasseur</a></li><li><a href="https://teams.railsgirlssummerofcode.org/projects/369-data-science-in-clojure">data science in clojure</a>, that I have submitted in dialogue with the scicloj organizing team</li></ul><p>Here, we will talk about the latter.</p><hr /><p>At scicloj, diversity is an explicit goal as well. Some of the other goals we have been discussing recently are making it easy to get involved and contribute, experimenting with the tools we are building and seeking a cohesive grammer for data science in Clojure. The RGSoC project will be addressing all of these goals.</p><p>As <a href="https://clojureverse.org/t/online-meeting-clojure-data-science/3503/17">argued</a> by Chris Nuernberger in one of the discussions that anticipated the creation of scicloj, a case-driven approach is an excellent way to continuously verify that we are creating a useful stack. Indeed, this principle has been affecting the growth of the clojure data science ecosystem in the last year. Writing <a href="https://scicloj.github.io/pages/reading/#tutorials">tutorials</a> has been our main way to learn about the state of the stack, and realize what may still be missing. At the same time, it has been a way to share what was already becoming possible.</p><p>Following this principle, the first component of the "data science in clojure" RGSoC project will <strong>looking into data problems</strong>. The team will choose various old &amp; new data science problems, and solve them in Clojure.</p><p>This will teach us about different aspects of usability of the emerging stack, not only in terms of functionality, but also in terms of clarity, simplicity and ease. In this way, the team will take an extremely important role in the ongoing discussion of scicloj regarding our goals and priorities.</p><p>To make this role explicit, the second component of the project will be <strong>discussing and prioritizing the arising issues and ideas</strong> together with the library maintainers. Selected issues will be solved by the maintainers, involving the team as much as possible in the technical process.</p><p>The project statement focuses on <a href="https://github.com/scicloj/clojisr">ClojisR</a> - a <a href="https://en.wiktionary.org/wiki/جسر">jisr</a> between Clojure and R, which is one of the pieces of the emerging stack. Being one of the library authors allowed me to submit it for the RGSoc project. However, the project does leave some room for expansion, and we will be happy to include other relevant libraries, as long as it is desired by the teams and by the maintainers of those libraries.</p><p>As commented recently by Teodor Heggelund, writing example walkthroughs can be done in different ways: some can be just about experimentation, and others can be about education -- that is, carefully teaching a certain practice or idea. In this RGSoC project, we seek both.</p><p>Therefore, the third component of the project would be choosing selected examples, organizing them and <strong>making a coherent story</strong> out of them, in the form of an open source book.</p><p>Often, discussing and solving specific problems can be a source for inspiration for broader reasoning about our journey. This kind of reflection is an important part of our work.</p><p>Thus, in the forth component of the RGSoc project, the team members will be <strong>engaging in general community discussions</strong>, sharing their thoughts and experiences.</p><hr /><p>There are many ways to help out, and the two main ones are joining join the project as <a href="https://railsgirlssummerofcode.org/students/application/">students</a> or <a href="https://railsgirlssummerofcode.org/guide/coaching/">coaches</a>. These are not small commitments. They require some careful thought and dedication. But I strongly believe that they may have huge impact on our journey, in unique and beautiful ways.</p><p>Scicloj has been going through a long, spiral path of growing the ecosystem, that will eventually converge to a simple, stable, flexible and friendly environment for data science. On our way towards that goal, fresh opinions and diverse points of view are extremely important. I strongly believe that the RGSoC will allow scicloj this kind of refreshment. That is one of the reasons I am so hopeful about this project.</p>
+</div>
+
+<div id="post-tags">
+    <b>Tags: </b>
+    
+    <a href="/blog-test/tags/diversity/">diversity</a>
+    
+    <a href="/blog-test/tags/data%20science/">data science</a>
+    
+</div>
+
+
+    <div id="prev-next">
+        
+        <a href="/blog-test/posts/2020-03-07-guix-jupyter/">&laquo; Meeting Video: Guix-Jupyter with Ludovic Courtès</a>
+        
+        
+        <a class="right" href="/blog-test/posts/2019-10-18-data-wishes/">Clojure and data: wishes, problems, and ideas &raquo;</a>
+        
+    </div>
+
+    
+
+
+</div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="sidebar">
+                <h3>Links</h3>
+                <ul id="links">
+                    <li><a href="http://scicloj.github.io/">SciCloj Community</a></li>
+                    <li><a href="http://youtube.com/c/scicloj">YouTube channel</a></li>
+                    <li><a href="https://github.com/scicloj/blog-content/issues">Feeback / Issues</a></li>
+                    
+                    <li><a href="/blog-test/pages/contributing/">Contributing</a></li>
+                    
+                    <li><a href="/blog-test/pages/discussions/">Discussions</a></li>
+                    
+                </ul>
+                
+                <div id="recent">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        
+                        <li><a href="/blog-test/posts/2020-11-11-nov-2020-fundamentals-study-meetings/">November 2020 fundamentals study meetings</a></li>
+                        
+                        <li><a href="/blog-test/posts/2020-10-29-nov-2020-ml-study-meetings/">November 2020 machine learning study meetings</a></li>
+                        
+                        <li><a href="/blog-test/posts/2020-08-26-public-meeting-2020-08-30/">Preparing to our public meeting on August 30th</a></li>
+                        
+                    </ul>
+                </div>
+                
+                
+                <div id="tags">
+                    <h3>Tags</h3>
+                    <ul>
+                        
+                        <li><a href="/blog-test/tags/diversity/">diversity</a></li>
+                        
+                        <li><a href="/blog-test/tags/reproducibility/">reproducibility</a></li>
+                        
+                        <li><a href="/blog-test/tags/cryogen/">cryogen</a></li>
+                        
+                        <li><a href="/blog-test/tags/data%20science/">data science</a></li>
+                        
+                        <li><a href="/blog-test/tags/covid-19/">covid-19</a></li>
+                        
+                        <li><a href="/blog-test/tags/community/">community</a></li>
+                        
+                        <li><a href="/blog-test/tags/hackathon/">hackathon</a></li>
+                        
+                        <li><a href="/blog-test/tags/meeting/">meeting</a></li>
+                        
+                        <li><a href="/blog-test/tags/notebooks/">notebooks</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+      Copyright &copy; 2021 SciCloj
+      <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
+
+      <license id="license">
+        <div>
+          <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 ShareAlike License</a>, including custom images & stylesheets.</p>
+          <p>Permissions beyond the scope of this license may be available by contacting <a xmlns:cc="http://creativecommons.org/ns#" href="https://twitter.com/scicloj" rel="cc:morePermissions">@scicloj</a></p>
+          <br>
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+        </div>
+      </license>
+
+    </footer>
+</div>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="/blog-test/js/highlight.pack.js" type="application/javascript"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>
